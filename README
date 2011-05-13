@@ -1,3 +1,34 @@
+== History de comandos usados en consola
+
+ rails new demo
+ cd demo/
+ git init .
+ git add .
+ git ci -m"initial commit"
+ bundle install
+ rails g scaffold country name:string
+ cat Rakefile
+ rake -T
+ rake apslabs:prueba
+ rake db:migrate
+ rake db:migrate RAILS_ENV=production
+ rails s
+ rails g scaffold state name:string population:integer country:belongs_to
+ rake db:migrate
+ rake -T
+ ls db/migrate
+ rake db:migrate VERSION=20110513140648
+ bundle install
+ annotate -p before -i -m
+ bundle install
+ rails s
+
+== Referencias usadas
+
+- http://railsapi.com/doc/rails-v3.0.7/
+- https://github.com/nathanvda/cocoon
+- https://github.com/indirect/jquery-rails
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
@@ -254,3 +285,4 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+
