@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @state.name %> de <%= @country.name %>
+</p>
+
+<p>
+  <b>Population:</b>
+  <%= @state.population %>
+</p>
+
+<%= link_to 'Edit', edit_country_state_path(@country, @state) %> |
+<%= link_to 'Back', country_states_path(@country) %>
+

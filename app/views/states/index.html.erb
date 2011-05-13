@@ -1,0 +1,27 @@
+<h1>Listing states de <%= @country.name %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Population</th>
+    <th>Country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @states.each do |state| %>
+  <tr>
+    <td><%= state.name %></td>
+    <td><%= state.population %></td>
+    <td><%= link_to 'Show', [@country, state] %></td>
+    <td><%= link_to 'Edit', edit_country_state_path(@country, state) %></td>
+    <td><%= link_to 'Destroy', [@country,state], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New State', new_country_state_path(@country) %>
+

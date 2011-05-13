@@ -5,3 +5,17 @@ require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
 Demo::Application.load_tasks
+
+
+namespace :apslabs do
+
+
+  desc "hola chicos esto es una prueba"
+  task :prueba do
+    # aca hare cosas de mantenimiento
+    system('ls -l')
+    Country.all
+  end
+
+end
+
